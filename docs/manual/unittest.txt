@@ -1,8 +1,8 @@
 ———————————————————————————————————————————————————————————
 HOWTO: Run Unit Tests
 ———————————————————————————————————————————————————————————
-By: Bartlomiej Mika
-Date: Feb, 14th, 2015
+By: Pratik V N 
+Date: May, 14th, 2020
 
 1) Make sure that the steps in postgres have been completed
 

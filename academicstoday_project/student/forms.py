@@ -1,7 +1,8 @@
 from django.db import models
 from django import forms
 from django.forms import ModelForm, Textarea, TextInput, NumberInput
-from django.forms.extras.widgets import Select, SelectDateWidget
+#from django.forms.extras.widgets import Select, SelectDateWidget
+from django.forms.widgets import Select, SelectDateWidget
 from registrar.models import EssaySubmission
 from registrar.models import AssignmentSubmission
 from registrar.models import PeerReview
@@ -42,8 +43,8 @@ class PeerReviewForm(forms.ModelForm):
             'text': 'Review',
         }
         widgets = {
-#            'marks': TextInput(attrs={'class': u'form-control','placeholder': u'Enter Title'}),
-            'text': Textarea(attrs={'class': u'form-control','placeholder': u'Enter Text'}),
+            #            'marks': TextInput(attrs={'class': u'form-control','placeholder': u'Enter Title'}),
+            'text': Textarea(attrs={'class': u'form-control', 'placeholder': u'Enter Text'}),
         }
 
 
@@ -56,8 +57,8 @@ class CourseDiscussionThreadForm(forms.ModelForm):
             'text': 'Thread Content',
         }
         widgets = {
-            'title': TextInput(attrs={'class': u'form-control','placeholder': u'Enter Title'}),
-            'text': Textarea(attrs={'class': u'form-control','placeholder': u'Enter Text'}),
+            'title': TextInput(attrs={'class': u'form-control', 'placeholder': u'Enter Title'}),
+            'text': Textarea(attrs={'class': u'form-control', 'placeholder': u'Enter Text'}),
         }
 
 
@@ -70,6 +71,6 @@ class CourseDiscussionPostForm(forms.ModelForm):
             'text': 'Post Content',
         }
         widgets = {
-            'title': TextInput(attrs={'class': u'form-control','placeholder': u'Enter Title'}),
-            'text': Textarea(attrs={'class': u'form-control','placeholder': u'Enter Text'}),
+            'title': TextInput(attrs={'class': u'form-control', 'placeholder': u'Enter Title'}),
+            'text': Textarea(attrs={'class': u'form-control', 'placeholder': u'Enter Text'}),
         }

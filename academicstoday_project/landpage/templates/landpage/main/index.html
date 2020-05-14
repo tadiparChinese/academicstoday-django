@@ -1,5 +1,5 @@
 {% extends 'landpage/base.html' %}
-{% load staticfiles %}
+{% load static %}
 {% block content %}
 
 <!-- Header -->
@@ -21,36 +21,42 @@
 
 
 
-<!-- Social Media -->
+<!-- Social Media 
 <div id="social-buttons" class="hidden-print">
     <div class="container">
         <ul class="list-inline">
             <li>
-                <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=AcademicsToday&amp;repo=py-academicstoday&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                <iframe class="github-btn"
+                    src="http://ghbtns.com/github-btn.html?user=AcademicsToday&amp;repo=py-academicstoday&amp;type=watch&amp;count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
             </li>
             <li>
-                <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=AcademicsToday&amp;repo=py-academicstoday&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
+                <iframe class="github-btn"
+                    src="http://ghbtns.com/github-btn.html?user=AcademicsToday&amp;repo=py-academicstoday&amp;type=fork&amp;count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
             </li>
             <li>
-                <iframe src="https://ghbtns.com/github-btn.html?user=AcademicsToday&repo=py-academicstoday&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-            </li>
-            <li class="follow-btn">
-                <!-- Make your own here: https://dev.twitter.com/web/follow-button -->
                 <iframe
-                    src="//platform.twitter.com/widgets/follow_button.html?screen_name=AcademicsToday"
-                    style="width: 235px; height: 20px;"
-                    allowtransparency="true"
-                    frameborder="0"
-                    scrolling="no">
+                    src="https://ghbtns.com/github-btn.html?user=AcademicsToday&repo=py-academicstoday&type=watch&count=true&v=2"
+                    frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+            </li>
+            <li class="follow-btn"> -->
+<!-- Make your own here: https://dev.twitter.com/web/follow-button -->
+<!--  <iframe src="//platform.twitter.com/widgets/follow_button.html?screen_name=AcademicsToday"
+                    style="width: 235px; height: 20px;" allowtransparency="true" frameborder="0" scrolling="no">
                 </iframe>
             </li>
-            <li class="tweet-btn hidden-phone">
-                <!-- Make your own here: https://about.twitter.com/resources/buttons#tweet -->
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.acadmicstoday.ca" data-text="Providing free university education to everyone on the planet, check us out!" data-via="AcademicsToday" data-hashtags="AcademicsToday">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <li class="tweet-btn hidden-phone">-->
+<!-- Make your own here: https://about.twitter.com/resources/buttons#tweet 
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.acadmicstoday.ca"
+                    data-text="Providing free university education to everyone on the planet, check us out!"
+                    data-via="AcademicsToday" data-hashtags="AcademicsToday">Tweet</a>
+                <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
             </li>
         </ul>
     </div>
-</div>
+</div> 
+-->
 
 
 
@@ -70,7 +76,8 @@
                     <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">Free for Everyone</h4>
-                <p class="text-muted">We at Academics Today believe in the principle of Neutron Learning, also known as learning without charge. You can take any course you want, for free.</p>
+                <p class="text-muted">We at Academics Today believe in the principle of Neutron Learning, also known as
+                    learning without charge. You can take any course you want, for free.</p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
@@ -78,7 +85,8 @@
                     <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">Eductional</h4>
-                <p class="text-muted">Academics Today can be used to link to videos all around the world, compile them, and add tests and assignments to create personalized courses.</p>
+                <p class="text-muted">Academics Today can be used to link to videos all around the world, compile them,
+                    and add tests and assignments to create personalized courses.</p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
@@ -86,7 +94,8 @@
                     <i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">Open Source</h4>
-                <p class="text-muted">Academics Today is a tool that can be used by anyone and seen by everyone. Open Source Code ensures all can participate securely.</p>
+                <p class="text-muted">Academics Today is a tool that can be used by anyone and seen by everyone. Open
+                    Source Code ensures all can participate securely.</p>
             </div>
         </div>
     </div>
@@ -107,23 +116,20 @@
         <div class="row">
             {% for top_pick in top_courses %}
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link"
-            data-toggle="modal"
-                onclick="ajax_popup_course_preview({{ top_pick.course.id }});";>
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"
+                    onclick="ajax_popup_course_preview({{ top_pick.course.id }});" ;>
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
                     {% if top_pick.course.image == '' %}
-                    <img src="{% static 'img/dummy.png' %}"
-                        class="img-responsive" alt="">
+                    <img src="{% static 'img/dummy.png' %}" class="img-responsive" alt="">
                     {% else %}
-                    <img src="{{ top_pick.course.image.url }}"
-                        class="img-responsive" alt="">
+                    <img src="{{ top_pick.course.image.url }}" class="img-responsive" alt="">
                     {% endif %}
-                    
-                        </a>
+
+                </a>
                 <div class="portfolio-caption">
                     <h4>{{ top_pick.course.title }}</h4>
                     <p class="text-muted">{{ top_pick.course.category }}</p>
@@ -144,15 +150,16 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Meet the team who are passionate about eductating the current generation and beyond!</h3>
+                <h3 class="section-subheading text-muted">Meet the team who are passionate about eductating the current
+                    generation and beyond!</h3>
             </div>
         </div>
         <div class="row">
             {% for team_member in team_members %}
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="{% static 'img/' %}{{ team_member.image_filename }}"
-                       class="img-responsive img-circle" alt="">
+                    <img src="{% static 'img/' %}{{ team_member.image_filename }}" class="img-responsive img-circle"
+                        alt="">
                     <h4>{{ team_member.full_name }}</h4>
                     <p class="text-muted">{{ team_member.role }}</p>
                     <ul class="list-inline social-buttons">
@@ -192,7 +199,8 @@
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">Follow us on your favourite social-networking site. We appreciate your support.</p>
+                <p class="large text-muted">Follow us on your favourite social-networking site. We appreciate your
+                    support.</p>
             </div>
         </div>
     </div>
@@ -207,9 +215,8 @@
             {% for partner in partners %}
             <div class="col-md-3 col-sm-6">
                 <a href="http://{{ partner.url }}">
-                    <img src="{% static 'img/' %}logos/{{ partner.image_filename }}"
-                       class="img-responsive img-centered"
-                         alt=""{{ partner.title }}>
+                    <img src="{% static 'img/' %}logos/{{ partner.image_filename }}" class="img-responsive img-centered"
+                        alt="" {{ partner.title }}>
                 </a>
             </div>
             {% endfor %}
@@ -225,7 +232,8 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Any comments, issues, or suggestions will be read by one of the staff.</h3>
+                <h3 class="section-subheading text-muted">Any comments, issues, or suggestions will be read by one of
+                    the staff.</h3>
             </div>
         </div>
         <div class="row">
@@ -259,11 +267,8 @@
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button onclick="ajax_send_message();"
-                                         id="id_send_msg_btn"
-                                       name="send_msg_btn"
-                                       type="button"
-                                      class="btn btn-xl">Send Message</button>
+                            <button onclick="ajax_send_message();" id="id_send_msg_btn" name="send_msg_btn"
+                                type="button" class="btn btn-xl">Send Message</button>
                         </div>
                     </div>
                 </form>
@@ -279,15 +284,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright © Academics Today 2015</span>
+                <span class="copyright">Copyright © Asamkhyeya Edutech Pvt Ltd 2020</span>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                    <li><a href="https://twitter.com/AcademicsToday"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/AcademicsToday"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://plus.google.com/+AcademicsTodayInc"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://github.com/AcademicsToday"><i class="fa fa-github"></i></a></li>
-                    <li><a href="http://www.youtube.com/academicstodayinc"><i class="fa fa-youtube"></i></a>
+                    <li><a href="https://twitter.com/AsamkhyeyaEdutech"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/AsamkhyeyaEdutech"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://plus.google.com/+AsamkhyeyaEdutechInc"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li><a href="https://github.com/AsamkhyeyaEdutech"><i class="fa fa-github"></i></a></li>
+                    <li><a href="http://www.youtube.com/AsamkhyeyaEdutechinc"><i class="fa fa-youtube"></i></a>
                     </li>
                 </ul>
             </div>
@@ -307,8 +313,7 @@
 <!----------------------------------------------------------------------------->
 
 <!-- Modal -->
-<div id="ajax_response_course_preview"
-   name="ajax_response_course_preview"></div>
+<div id="ajax_response_course_preview" name="ajax_response_course_preview"></div>
 <div id="ajax_response_login"></div>
 <div id="ajax_response_register"></div>
 <!-- end modal -->
@@ -319,14 +324,14 @@
 
 {% if HAS_ADVERTISMENT %}
 <!-- Ads -->
-<br/>
+<!-- <br />
 <div class="row">
     <div class="col-lg-12">
         <div style="text-align: center;">
             <a href='http://a-ads.com?partner=68202'>Advertise with Anonymous Ads</a>
         </div>
     </div>
-</div>
+</div> -->
 <!-- /.Ads-->
 {% endif %}
 

@@ -1,5 +1,5 @@
 {% extends 'publisher/base.html' %}
-{% load staticfiles %}
+{% load static %}
 {% block content %}
 <!-- Page Heading -->
 <div class="row">
@@ -17,9 +17,8 @@
 </div>
 <!-- /.row -->
 
-<div id="ajax_placeholder_table"
-   name="ajax_placeholder_table">
-{% if publications.object_list.count == 0 %}
+<div id="ajax_placeholder_table" name="ajax_placeholder_table">
+    {% if publications.object_list.count == 0 %}
 
     <!-- No Publications Banner -->
     <div class="jumbotron">
@@ -29,15 +28,14 @@
         </p>
     </div>
     <!-- /.jumbotron -->
-    
-{% else %}
-{% include "publisher/catalog/table.html" %}
-{% endif %}
+
+    {% else %}
+    {% include "publisher/catalog/table.html" %}
+    {% endif %}
 </div><!-- /.ajax_placeholder_table -->
 
 <!-- Modal -->
-<div id="ajax_modal"
-   name="ajax_modal"></div>
+<div id="ajax_modal" name="ajax_modal"></div>
 <!-- end modal -->
 
 {% include 'publisher/catalog/js.html' %}

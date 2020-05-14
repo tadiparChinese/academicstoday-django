@@ -1,12 +1,8 @@
 ![alt tag](https://github.com/AcademicsToday/py-academicstoday/blob/master/docs/media/logo.png)
-# py-academicstoday
+# asamkhyeya Edutech
 ## Description
-A open-source platform for online course-based learning and education.
+A platform for online course-based learning and education.
 
-## Support
-You can financially support the project by either:
-* Bitcoin donations: 1NdWWNyHJJd5oFhtzAFtApNaHjSuAbGmXZ
-* Dash donations: XcNwdbXmEdnm4ErQuK8A9UkcTwTkUGf7ML 
 
 ## Features
 * Students log in and enroll in the provided courses
@@ -20,8 +16,6 @@ You can financially support the project by either:
 * pip 6.1.1+
 * virtualenv 12.1.1+
 
-## Dependencies
-See [requirements.txt](https://github.com/AcademicsToday/py-academicstoday/blob/master/requirements.txt) for more information.
 
 ## Build Instructions
 ### Application
@@ -29,7 +23,7 @@ For Linux and OSX users, run these commands:
 
 1. First clone the project locally and then go into the directory
   ```
-  $ git clone https://github.com/AcademicsToday/py-academicstoday.git 
+  $ git clone https://github.com/tadiparChinese/academicstoday-django.git 
   $ cd py-academicstoday
   ```
 
@@ -119,6 +113,4 @@ Congratulations, you are all setup to run the web-app! Have fun coding!
 This web-app is licensed under the Apache 2.0 license. See [LICENSE.md](LICENSE.md) for more information.
 
 ## Developers
-* Bartlomiej Mika
-* Michael Murray
-* Sebastian Rydzewski
+* Pratik V N

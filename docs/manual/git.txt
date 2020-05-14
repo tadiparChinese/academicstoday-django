@@ -192,7 +192,7 @@ academicstoday_project/academicstoday_project/secret_settings.py
 
 c) Setup our local git instance to our remote
 # git init
-# git remote add origin https://github.com/AcademicsToday/py-academicstoday.git
+# git remote add origin https://github.com/tadiparChinese/academicstoday-django.git
 # git remote add backup git@192.168.0.5:/git/base/py-academicstoday.git
 # git add .
 # git commit -m 'Initial commit.'
@@ -210,19 +210,18 @@ a) To clone the repository, go to the directory root you want to clone your file
 b) Now we need to sync with the repository, so delete our folder. Afterwords we will download from the repository.
 Note: This will be the folder where our project "py-academicstoday" will be cloned to
 [Origin]
-# git clone https://github.com/AcademicsToday/py-academicstoday.git
+# git clone https://github.com/tadiparChinese/academicstoday-django.git
 
 
 [Backup]
-# git clone ssh://git@192.168.0.5//git/base/py-academicstoday.git
-
+# git clone ssh://git@github.com:tadiparChinese/academicstoday-django.git
 
 
 Troubleshooting: 
 ————————————————
 1) If you get a 'access denied or repository not exported' error then do this:
 # git remote rm origin
-# git remote add origin git@192.168.0.5:/git/base/py-academicstoday.git
+# git remote add origin git@github.com:tadiparChinese/academicstoday-django.git
 # git push origin master
 
 2) Apply gitignore on an existing repository already tracking large number of files

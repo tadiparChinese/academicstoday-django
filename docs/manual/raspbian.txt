@@ -1,8 +1,8 @@
 ——————————————————————————————————————————————————————————————————————
 HOWTO: Setup "py-academicstoday" on Raspbian from Mac OSX Yosemite
 ——————————————————————————————————————————————————————————————————————
-By: Bartlomiej Mika
-Date: Feb, 14th, 2015
+By: Pratik V N
+Date: May, 14th, 2020
 
 
 

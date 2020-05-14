@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(null=True)),
                 ('published_date', models.DateField(auto_now=True, null=True)),
                 ('file', models.FileField(upload_to='uploads', null=True)),
-                ('author', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+                ('author', models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE)),
                 ('reviews', models.ManyToManyField(to='registrar.PeerReview')),
             ],
             options={

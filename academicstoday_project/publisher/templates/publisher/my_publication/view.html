@@ -1,5 +1,5 @@
 {% extends 'publisher/base.html' %}
-{% load staticfiles %}
+{% load static %}
 {% block content %}
 <!-- Page Heading -->
 <div class="row">
@@ -17,33 +17,29 @@
 </div>
 <!-- /.row -->
 
-<div id="ajax_placeholder_table"
-   name="ajax_placeholder_table">
-{% if publications.count == 0 %}
+<div id="ajax_placeholder_table" name="ajax_placeholder_table">
+    {% if publications.count == 0 %}
 
-<!-- No Publications Banner -->
-<div class="jumbotron">
-    <h1>Publish</h1>
-    <p>
-        Publish any type of intellectual article. It can be based on scientific findings, engineering discovery or any literary work.
-    </p>
-    <p><a onclick="popup_publication_modal(0);"
-               id="publish_0_btn"
-             name="publish_0_btn"
-            class="btn btn-primary btn-lg"
-             role="button">Publish Article »</a>
-    </p>
-</div>
-<!-- /.jumbotron -->
+    <!-- No Publications Banner -->
+    <div class="jumbotron">
+        <h1>Publish</h1>
+        <p>
+            Publish any type of intellectual article. It can be based on scientific findings, engineering discovery or
+            any literary work.
+        </p>
+        <p><a onclick="popup_publication_modal(0);" id="publish_0_btn" name="publish_0_btn"
+                class="btn btn-primary btn-lg" role="button">Publish Article »</a>
+        </p>
+    </div>
+    <!-- /.jumbotron -->
 
-{% else %}
+    {% else %}
     {% include "publisher/my_publication/table.html" %}
-{% endif %}
+    {% endif %}
 </div><!-- /.ajax_placeholder_table -->
 
 <!-- Modal -->
-<div id="ajax_modal"
-   name="ajax_modal"></div>
+<div id="ajax_modal" name="ajax_modal"></div>
 <!-- end modal -->
 
 <!-- Ads -->
