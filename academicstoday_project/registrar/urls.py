@@ -36,7 +36,8 @@ urlpatterns = [
     path('certificates_table/', certificate.certificates_table),
     path('change_certificate_accessiblity/',
          certificate.change_certificate_accessiblity),
-    #path('certificate/(\d+)/', certificate.certificate_page),
+    #path('certificate/(\\d+)/', certificate.certificate_page),
+    path('certificate/<int:credit_id>/', certificate.certificate_page),
     path('certificate_permalink_modal/',
          certificate.certificate_permalink_modal),
 ]

@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.conf import settings
 from django.core.validators import MinValueValidator, MaxValueValidator
 import os
+from django.core.files.storage import default_storage
 from account.models import Student
 from account.models import Teacher
 

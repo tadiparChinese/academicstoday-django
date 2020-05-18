@@ -8,10 +8,11 @@ app_name = 'publisher'
 urlpatterns = [
     # Publications(s)
     path('publish/', catalog.catalog_page),
-    path('publication/(\\d+)/', publication.publication_page),
-    path('publication/(\\d+)/peer_review_modal/', publication.peer_review_modal),
-    path('publication/(\\d+)/save_peer_review/', publication.save_peer_review),
-    path('publication/(\\d+)/delete_peer_review/',
+    #path('publication/(\\d+)/', publication.publication_page),
+    path('publication/<int:publication_id>/', publication.publication_page),
+    path('publication/<int:publication_id>/peer_review_modal/', publication.peer_review_modal),
+    path('publication/<int:publication_id>/save_peer_review/', publication.save_peer_review),
+    path('publication/<int:publication_id>/delete_peer_review/',
          publication.delete_peer_review),
 
     # My Publications
