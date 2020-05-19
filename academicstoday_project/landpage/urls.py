@@ -37,7 +37,7 @@ urlpatterns = [
 
     # Off-Convas Stuff
     path('terms/', terms.terms_page, name='terms'),
-    path('privacy', privacy.privacy_page, name='privacy'),
+    path('privacy/', privacy.privacy_page, name='privacy'),
     path('forgot_password/', forgot_password.forgot_password_page,
          name='forgot_password'),
     path('reset_password/', forgot_password.reset_password,

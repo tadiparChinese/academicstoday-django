@@ -1,5 +1,5 @@
 import json
-from django.core.urlresolvers import resolve
+from django.urls import resolve, reverse
 from django.http import HttpRequest
 from django.http import QueryDict
 from django.test import TestCase
